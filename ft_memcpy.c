@@ -1,36 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/13 15:09:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/14 10:50:12 by igngonza         ###   ########.fr       */
+/*   Created: 2024/03/14 10:42:51 by igbescobar        #+#    #+#             */
+/*   Updated: 2024/03/14 11:06:50 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int	i;
+	int			i;
+	char		*d;
+	const char	*s;
 
 	i = 0;
+	d = (char *)dest;
+	s = (const char *)src;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = 0x00;
+		d[i] = s[i];
 		i++;
 	}
+	return (dest);
 }
+
 int	main(void)
 {
-	char	arr[10];
-
-	ft_bzero(arr, 5);
-	printf("%s %d", arr, 5);
-	// bzero(arr, 5);
-	// printf("%s &d", arr, 5);
+	char arr[10];
+	char *arr2 = "hello there";
+	// ft_memcpy(arr, arr2, 5);
+	// printf("%s\n", arr);
+	memcpy(arr, arr2, 5);
+	printf("%s\n", arr);
 	return (0);
 }
