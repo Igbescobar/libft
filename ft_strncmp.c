@@ -6,9 +6,11 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:46:42 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/12 18:26:16 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 12:24:14 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

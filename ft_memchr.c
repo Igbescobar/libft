@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 15:36:08 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/13 15:54:45 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 12:06:40 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,20 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned long	i;
+	unsigned char	*source;
 
+	source = (unsigned char *)s;
 	i = 0;
-	while (s[i] && i < n)
+	while (source[i] && i < n)
 	{
-		if (s[i] == c)
-			return (&s[i]);
+		if (source[i] == c)
+			return (&source[i]);
 		i++;
 	}
 	return (NULL);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	*arr;
 
@@ -35,4 +37,4 @@ int	main(void)
 	printf("%s\n", ft_memchr(arr, 'o', 7));
 	printf("%s", memchr(arr, 'o', 7));
 	return (0);
-}
+}*/

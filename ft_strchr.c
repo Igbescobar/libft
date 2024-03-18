@@ -6,22 +6,22 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 15:18:58 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/12 16:12:55 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 12:20:13 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
+	while (*s != c && *s != '\0')
+		s++;
+	if (*s == '\0')
 	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
-		i++;
+		if (c != '\0')
+			return (NULL);
+		else
+			return ((char *)s);
 	}
-	if (s[i] == c)
-		return ((char *)&s[i]);
-	return (NULL);
+	return ((char *)s);
 }

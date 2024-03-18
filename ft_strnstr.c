@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 10:41:15 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/13 10:52:34 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 12:23:32 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	i;
-	int	j;
+	long unsigned int	i;
+	long unsigned int	j;
 
 	i = 0;
 	if (needle[i] == '\0')

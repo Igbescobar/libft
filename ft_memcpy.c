@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:42:51 by igbescobar        #+#    #+#             */
-/*   Updated: 2024/03/18 10:57:34 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 11:56:48 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	int			i;
-	char		*d;
-	const char	*s;
+	unsigned int	i;
+	char			*d;
+	const char		*s;
 
 	i = 0;
 	d = (char *)dest;

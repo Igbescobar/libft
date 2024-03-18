@@ -6,14 +6,15 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:25:18 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 10:58:03 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 13:38:17 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z'))
-		return (0);
-	else
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
+	return (0);
 }
