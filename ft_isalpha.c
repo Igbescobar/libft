@@ -6,11 +6,9 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:25:18 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 13:38:17 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 14:08:31 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {
