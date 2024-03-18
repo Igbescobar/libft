@@ -6,13 +6,13 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 15:02:29 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 12:31:33 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 18:29:58 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 177)
+	if (c >= 0 && c <= 127)
 		return (1);
 	else
 		return (0);

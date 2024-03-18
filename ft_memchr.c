@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 15:36:08 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 12:06:40 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 19:52:21 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned long	i;
+	size_t			i;
 	unsigned char	*source;
 
 	source = (unsigned char *)s;
 	i = 0;
-	while (source[i] && i < n)
+	while (i < n)
 	{
-		if (source[i] == c)
+		if (source[i] == (unsigned char)c)
 			return (&source[i]);
 		i++;
 	}
@@ -31,10 +31,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 /*int	main(void)
 {
-	char	*arr;
+	char	*src;
 
-	arr = "hello there";
-	printf("%s\n", ft_memchr(arr, 'o', 7));
-	printf("%s", memchr(arr, 'o', 7));
+	src = "/|\x12\xff\x09\0\x42\042\0\42|\\";
+	printf("%p\n", ft_memchr(src, '\0', 12));
+	printf("%p", memchr(src, '\0', 12));
 	return (0);
 }*/
