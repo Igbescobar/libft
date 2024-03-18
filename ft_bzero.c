@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 15:09:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/14 10:50:12 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 10:55:21 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-int	main(void)
+/*int	main(void)
 {
 	char	arr[10];
 
@@ -33,4 +33,4 @@ int	main(void)
 	// bzero(arr, 5);
 	// printf("%s &d", arr, 5);
 	return (0);
-}
+}*/

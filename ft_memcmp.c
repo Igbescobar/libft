@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 11:26:06 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/15 13:03:15 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/18 10:56:46 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char *arr = "hello 9there";
 	char *arr2 = "hello 943";
@@ -39,4 +39,4 @@ int	main(void)
 	printf("%d\n", ft_memcmp(arr, arr2, 1));
 	printf("%d\n", memcmp(arr, arr2, 1));
 	return (0);
-}
+}*/

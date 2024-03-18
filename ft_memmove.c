@@ -1,22 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/12 12:43:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 10:57:19 by igngonza         ###   ########.fr       */
+/*   Created: 2024/03/18 10:22:35 by igngonza          #+#    #+#             */
+/*   Updated: 2024/03/18 10:52:09 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_tolower(char c)
+#include <string.h>
+
+void	*memmove(void dest, const void src, size_t n)
 {
-	if (c >= 'A' && c <= 'Z')
-	{
-		c = c + 32;
-		return (c);
-	}
-	else
-		return (c);
 }
