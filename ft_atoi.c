@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 11:07:22 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/14 10:50:17 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/19 16:07:36 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	result = 0;
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
-		|| str[i] == '\r')
+		|| str[i] == '\r' || str[i] == '\f')
 		i++;
 	while ((str[i] == '-' || str[i] == '+') && (counter < 1))
 	{
@@ -41,13 +41,13 @@ int	ft_atoi(const char *str)
 	return (result * sign);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	i;
 	int	j;
 
-	i = ft_atoi("--8585-57834953");
-	j = atoi("--8585-57834953");
+	i = ft_atoi("-123THERE IS A NYANCAT UNDER YOUR BED");
+	j = atoi("-123THERE IS A NYANCAT UNDER YOUR BED");
 	printf("%d\n%d\n", i, j);
 	return (0);
-}
+}*/

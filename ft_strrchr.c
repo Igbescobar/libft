@@ -6,24 +6,36 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:29:08 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 12:22:45 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/19 15:25:23 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "stdio.h"
+#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
-	long unsigned int	i;
+	const char	*source;
 
-	i = 0;
-	while (s[i])
-		i++;
-	while (i != 0)
+	source = NULL;
+	while (*s)
 	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
-		i--;
+		if (*s == (char)c)
+			source = s;
+		s++;
 	}
-	return (NULL);
+	if (*s == (char)c)
+		return ((char *)s);
+	return ((char *)source);
 }
+/*int	main(void)
+{
+	char	*src;
+	char	*d1;
+	char	*d2;
+
+	src = "\0";
+	printf("%s\n", ft_strrchr(src, '\0'));
+	printf("%s\n", strrchr(src, '\0'));
+}*/
