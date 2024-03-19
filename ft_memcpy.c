@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:42:51 by igbescobar        #+#    #+#             */
-/*   Updated: 2024/03/18 11:56:48 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/19 16:51:54 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,13 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 /*int	main(void)
 {
-	char arr[10];
-	char *arr2 = "hello there";
-	// ft_memcpy(arr, arr2, 5);
-	// printf("%s\n", arr);
-	memcpy(arr, arr2, 5);
+	char	arr[10];
+	char	*arr2;
+
+	arr2 = "hello there";
+	ft_memcpy(((void *)0), ((void *)0), 5);
 	printf("%s\n", arr);
+	// memcpy(((void *)0), ((void *)0), 5);
+	// printf("%s\n", arr);
 	return (0);
 }*/

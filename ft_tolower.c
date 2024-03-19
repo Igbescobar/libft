@@ -6,17 +6,15 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:43:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 10:57:19 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/19 16:36:48 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_tolower(char c)
+int	ft_tolower(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 65 && c <= 90)
 	{
 		c = c + 32;
-		return (c);
 	}
-	else
-		return (c);
+	return (c);
 }
