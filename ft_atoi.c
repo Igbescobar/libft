@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 11:07:22 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/19 16:07:36 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/03/20 11:01:11 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,11 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sign = 1;
 	result = 0;
+	counter = 0;
 	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
 		|| str[i] == '\r' || str[i] == '\f')
 		i++;
-	while ((str[i] == '-' || str[i] == '+') && (counter < 1))
+	while ((str[i] == '-' || str[i] == 43) && (counter < 1))
 	{
 		if (str[i] == '-')
 			sign *= -1;
@@ -43,11 +44,12 @@ int	ft_atoi(const char *str)
 
 /*int	main(void)
 {
-	int	i;
-	int	j;
+	char	n[40] = "+1234";
+	int		i1;
+	int		i2;
 
-	i = ft_atoi("-123THERE IS A NYANCAT UNDER YOUR BED");
-	j = atoi("-123THERE IS A NYANCAT UNDER YOUR BED");
-	printf("%d\n%d\n", i, j);
+	i1 = atoi(n);
+	i2 = ft_atoi(n);
+	printf("%d\n%d\n", i1, i2);
 	return (0);
 }*/
