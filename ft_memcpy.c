@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 10:42:51 by igbescobar        #+#    #+#             */
-/*   Updated: 2024/03/20 10:31:26 by igngonza         ###   ########.fr       */
+/*   Created: 2024/04/03 21:00:26 by igngonza          #+#    #+#             */
+/*   Updated: 2024/04/03 21:00:30 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
