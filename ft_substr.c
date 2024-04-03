@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 16:37:53 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/22 11:21:08 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/01 19:11:40 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,23 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	void	*result;
+	char	*result;
 
-	result = (void *)malloc((len + 1) * sizeof(char));
-	if (result != NULL)
+	if (!s)
+		return (0);
+	if (ft_strlen(s) < start)
+		len = 0;
+	if (ft_strlen(s + start) < len)
+		len = ft_strlen(s + start);
+	result = malloc((len + 1) * sizeof(char));
+	if (!result)
+		return (0);
+	else
 	{
-		ft_memcpy(result, &s[start], len);
-		((char *)result)[len] = '\0';
+		ft_memcpy(result, s + start, len);
+		result[len] = '\0';
 	}
-	return ((char *)result);
+	return (result);
 }
 
 /*int	main(void)

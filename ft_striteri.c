@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/18 10:22:35 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/22 12:47:56 by igngonza         ###   ########.fr       */
+/*   Created: 2024/04/03 15:50:55 by igngonza          #+#    #+#             */
+/*   Updated: 2024/04/03 15:55:52 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned char	*d;
-	unsigned char	*s;
-	size_t			i;
+	unsigned int i;
 
-	d = (unsigned char *)dest;
-	s = (unsigned char *)src;
 	i = 0;
-	if (s == d)
-		return (dest);
-	else
+	if (!s)
+		return ;
+	while (s[i])
 	{
-		if (s < d)
-		{
-			while (++i <= n)
-				d[n - i] = s[n - i];
-		}
-		else
-		{
-			while (n--)
-				*d++ = *s++;
-		}
-		return (dest);
+		f(i, &s[i]);
+		i++;
 	}
 }
