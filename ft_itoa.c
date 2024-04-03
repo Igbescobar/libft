@@ -35,9 +35,9 @@ int	ft_size_number(int n)
 
 char	*ft_itoa(int n)
 {
-	long number;
-	char *result;
-	int i;
+	long	number;
+	char	*result;
+	int		i;
 
 	i = 0;
 	result = (char *)malloc(ft_size_number(n) + 1 * (sizeof(char)));

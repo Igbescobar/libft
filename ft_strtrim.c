@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 11:47:31 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/25 16:19:47 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/03 18:25:01 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t len;
-	char *result;
+	size_t	len;
+	char	*result;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);
