@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 11:54:17 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/03 17:00:57 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/04 16:31:46 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
-/**void	ft_putnbr_fd(int n, int fd); **/
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
