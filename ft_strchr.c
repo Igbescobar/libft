@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 15:18:58 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/04 17:28:41 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/06 13:18:30 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <signal.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -20,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	unsigned char	ch;
 
 	if (!s)
-		return (0);
+		raise(SIGSEGV);
 	i = 0;
 	ch = c + '\0';
 	while (s[i] != '\0')
