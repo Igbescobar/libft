@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 15:18:58 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/06 13:18:30 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/09 19:19:56 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int				i;
-	unsigned char	ch;
+	int		i;
+	char	ch;
 
-	if (!s)
-		raise(SIGSEGV);
 	i = 0;
-	ch = c + '\0';
+	ch = (char)c;
 	while (s[i] != '\0')
 	{
 		if (s[i] == ch)
@@ -37,6 +35,11 @@ char	*ft_strchr(const char *s, int c)
 
 /*int	main(void)
 {
-	printf("%s\n", ft_strchr(((void *)0), '\0'));
-	printf("%s\n", strchr(((void *)0), '\0'));
+	int		a;
+	char	b;
+
+	a = 1000 + 'a';
+	b = (char)356;
+	printf("%d\n", a);
+	printf("%c\n", b);
 }*/
