@@ -41,19 +41,19 @@ LIBC    = ar rcs
 CC      = gcc
 RM      = rm -f
 CFLAGS  = -Wall -Wextra -Werror
-INCS    = libft.h
+INCLUDE    = libft.h
+
+all: $(NAME)
 
 $(NAME): $(OBJS) $(INCLUDE)
 	$(LIBC) $(NAME) $(OBJS)
 
-all:    $(NAME)
-
 clean:
-	$(RM) $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re .c .o
+.PHONY: all clean fclean re
