@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 15:09:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 11:56:26 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/15 18:48:42 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
