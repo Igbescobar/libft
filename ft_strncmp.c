@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:46:42 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/19 13:02:54 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/15 17:41:51 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	char	*s2;
 	size_t	size;
 
-	s1 = "atoms\0\0\0\0";
-	s2 = "atoms\0abc";
-	size = 8;
+	s1 = "atomsmaigcos\0\0\0\0";
+	s2 = "atomsmagicos\0abc";
+	size = 10;
 	printf("%d\n", (strncmp(s1, s2, size)));
 	printf("%d\n", (ft_strncmp(s1, s2, size)));
 }*/
