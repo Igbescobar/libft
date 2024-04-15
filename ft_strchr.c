@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 15:18:58 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/09 19:19:56 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/15 17:05:10 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,8 @@ char	*ft_strchr(const char *s, int c)
 
 /*int	main(void)
 {
-	int		a;
 	char	b;
 
-	a = 1000 + 'a';
 	b = (char)356;
-	printf("%d\n", a);
-	printf("%c\n", b);
+	printf("%s\n", ft_strchr("parada", b));
 }*/
