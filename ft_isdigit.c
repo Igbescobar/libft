@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:25:01 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/18 14:08:28 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/15 16:52:35 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -16,3 +18,8 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+/*int	main(void)
+{
+	printf("%d\n", ft_isdigit('6'));
+	return (0);
+}*/
