@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 11:47:31 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/03 18:25:01 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/19 13:38:58 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result = ft_substr(s1, 0, len + 1);
 	return (result);
 }
+/*int	main(void)
+{
+	printf("%s\n", ft_strtrim("aaaaaaaababbbbbaaaaaa", "a"));
+	return (0);
+}*/
