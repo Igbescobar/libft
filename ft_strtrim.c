@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 11:47:31 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/19 13:38:58 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/19 13:49:04 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 /*int	main(void)
 {
-	printf("%s\n", ft_strtrim("aaaaaaaababbbbbaaaaaa", "a"));
+	printf("%s\n", ft_strtrim("aaaaaaaabroooooaaaaaab", "ab"));
 	return (0);
 }*/
