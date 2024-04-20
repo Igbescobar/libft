@@ -59,3 +59,8 @@ char	*ft_itoa(int n)
 	result[ft_size_number(n) - i] = (number % 10) + 48;
 	return (result);
 }
+/*int	main(void)
+{
+	printf("%s\n", ft_itoa(-55));
+	return (0);
+}*/
