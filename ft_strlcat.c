@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 14:13:09 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/16 18:10:54 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/21 10:57:55 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -21,6 +22,8 @@ size_t	ft_strlcat(char *dest, char *src, unsigned int size)
 
 	i = 0;
 	j = 0;
+	if (dest == NULL && size == 0)
+		return ((size_t)(ft_strlen(src)));
 	while (dest[i])
 		i++;
 	if (size > 0)
@@ -42,12 +45,12 @@ size_t	ft_strlcat(char *dest, char *src, unsigned int size)
 
 /*int	main(void)
 {
-	char	arr[100] = "hello";
-	char	arr1[] = "thereeeee";
+	char	arr1[] = "helllo there";
 
-	// printf("%lu\n", strlcat(arr, arr1, 0));
+	// char	arr[100] = NULL;
+	// printf("%lu\n", strlcat(arr1, NULL, 0));
 	// printf("%s\n", arr);
-	printf("%u\n", ft_strlcat(arr, arr1, 0));
-	printf("%s\n", arr);
+	printf("%lu\n", ft_strlcat(NULL, arr1, 0));
+	// printf("%s\n", arr);
 	return (0);
 }*/

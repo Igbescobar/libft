@@ -38,14 +38,13 @@ SRCS    = ft_memset.c\
 OBJS    = $(SRCS:.c=.o)
 
 LIBC    = ar rcs
-CC      = gcc
+CC      = cc
 RM      = rm -f
 CFLAGS  = -Wall -Wextra -Werror
-INCLUDE    = libft.h
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(INCLUDE)
+$(NAME): $(OBJS)
 	$(LIBC) $(NAME) $(OBJS)
 
 clean:
