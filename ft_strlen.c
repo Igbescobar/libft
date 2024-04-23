@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:40:29 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 17:34:59 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 16:36:49 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*int	main(void)
-{
-	printf("%zu\n", ft_strlen("i like pineapple"));
-	return (0);
-}*/
