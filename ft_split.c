@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 15:54:56 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/09 18:59:36 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 16:08:59 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,8 @@ char	**ft_split(const char *s, char c)
 	size_t	i;
 	size_t	len;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	ret = ft_memory_allocation(s, c);
 	while (*s && ret)
