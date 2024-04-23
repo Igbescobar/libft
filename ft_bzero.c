@@ -6,12 +6,11 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 15:09:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 18:48:42 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:00:47 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <strings.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -24,13 +23,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*int	main(void)
-{
-	char	arr[10];
-
-	ft_bzero(arr, 5);
-	printf("%s %d", arr, 5);
-	// bzero(arr, 5);
-	// printf("%s &d", arr, 5);
-	return (0);
-}*/

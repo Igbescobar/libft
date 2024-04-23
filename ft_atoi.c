@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 11:07:22 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/20 11:01:11 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:02:21 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -41,15 +40,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-
-/*int	main(void)
-{
-	char	n[40] = "+1234";
-	int		i1;
-	int		i2;
-
-	i1 = atoi(n);
-	i2 = ft_atoi(n);
-	printf("%d\n%d\n", i1, i2);
-	return (0);
-}*/

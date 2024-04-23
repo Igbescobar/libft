@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:25:18 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 16:49:53 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:59:35 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_isalpha('b'));
-	return (0);
-}*/

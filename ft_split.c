@@ -6,13 +6,11 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 15:54:56 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/23 16:24:39 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:02:11 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static size_t	ft_find_total_tokens(const char *s, char c)
 {
@@ -97,12 +95,3 @@ char	**ft_split(const char *s, char c)
 	ret = ft_copy_into_array(s, ret, c);
 	return (ret);
 }
-/*int	main(void)
-{
-	char	**str_array;
-
-	str_array = ft_split("hello!", ' ');
-	for (int i = 0; str_array[i] != NULL; i++)
-		printf("%s\n", str_array[i]);
-	return (0);
-}*/

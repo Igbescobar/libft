@@ -6,14 +6,11 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 15:18:58 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 17:05:10 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:01:30 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <signal.h>
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -32,11 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (0);
 }
-
-/*int	main(void)
-{
-	char	b;
-
-	b = (char)356;
-	printf("%s\n", ft_strchr("parada", b));
-}*/

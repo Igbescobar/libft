@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:51:44 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 16:59:46 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:02:23 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*int	main(void)
-{
-	printf("%d\n", ft_isalnum('H'));
-	return (0);
-}*/

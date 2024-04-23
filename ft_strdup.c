@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 13:05:34 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/22 11:22:00 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:58:31 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,3 @@ char	*ft_strdup(const char *s1)
 	ft_memcpy(result, s1, len);
 	return (result);
 }
-
-/*int	main(void)
-{
-	char	*str;
-	char	*tmp;
-
-	tmp = "";
-	str = ft_strdup(tmp);
-	printf("%s\n", str);
-}*/

@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 16:04:01 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 17:29:46 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:59:21 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-/*int	main(void)
-{
-	printf("%d\n", ft_isprint('&'));
-	return (0);
-}*/

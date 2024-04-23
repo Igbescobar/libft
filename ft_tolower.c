@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:43:47 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 16:57:32 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:58:02 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-/*int	main(void)
-{
-	printf("%d\n", ft_tolower('h'));
-	return (0);
-}*/

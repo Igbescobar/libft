@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_size_number(int n)
 {
@@ -35,9 +34,9 @@ int	ft_size_number(int n)
 
 char	*ft_itoa(int n)
 {
-	long	number;
-	char	*result;
-	int		i;
+	long number;
+	char *result;
+	int i;
 
 	i = 0;
 	result = (char *)malloc(ft_size_number(n) + 1 * (sizeof(char)));
@@ -59,8 +58,3 @@ char	*ft_itoa(int n)
 	result[ft_size_number(n) - i] = (number % 10) + 48;
 	return (result);
 }
-/*int	main(void)
-{
-	printf("%s\n", ft_itoa(-55));
-	return (0);
-}*/

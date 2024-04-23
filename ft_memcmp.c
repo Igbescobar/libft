@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 11:26:06 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/19 12:18:24 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 18:02:16 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -30,15 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*int	main(void)
-{
-	char	*arr;
-	char	*arr2;
-
-	arr = "t\200";
-	arr2 = "t\0";
-	printf("%d\n", ft_memcmp(arr, arr2, 2));
-	printf("%d\n", memcmp(arr, arr2, 2));
-	return (0);
-}*/
