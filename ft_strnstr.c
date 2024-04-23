@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 10:41:15 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/21 11:11:05 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:44:06 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *s, const char *need, size_t len)
 {
@@ -36,13 +35,3 @@ char	*ft_strnstr(const char *s, const char *need, size_t len)
 	}
 	return (NULL);
 }
-
-/*int	main(void)
-{
-	char	arr[] = "hellotherehola";
-	char	arr1[] = "hello";
-
-	printf("%p\n", (void *)strnstr(NULL, arr1, 0));
-	printf("%p\n", (void *)ft_strnstr(NULL, arr1, 0));
-	return (0);
-}*/

@@ -6,12 +6,11 @@
 /*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 12:25:22 by igngonza          #+#    #+#             */
-/*   Updated: 2024/03/19 16:37:26 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:44:36 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -21,9 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-
-/*int	main(void)
-{
-	printf("%d\n", ft_toupper(128));
-	printf("%d\n", toupper(128));
-}*/

@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 14:13:09 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/21 10:57:55 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:43:26 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 size_t	ft_strlcat(char *dest, char *src, unsigned int size)
 {
@@ -42,15 +40,3 @@ size_t	ft_strlcat(char *dest, char *src, unsigned int size)
 		return (result_length + size);
 	return (i + result_length);
 }
-
-/*int	main(void)
-{
-	char	arr1[] = "helllo there";
-
-	// char	arr[100] = NULL;
-	// printf("%lu\n", strlcat(arr1, NULL, 0));
-	// printf("%s\n", arr);
-	printf("%lu\n", ft_strlcat(NULL, arr1, 0));
-	// printf("%s\n", arr);
-	return (0);
-}*/

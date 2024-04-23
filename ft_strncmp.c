@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: igngonza <igngonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:46:42 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/15 17:41:51 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:43:56 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -31,16 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*int	main(void)
-{
-	char	*s1;
-	char	*s2;
-	size_t	size;
-
-	s1 = "atomsmaigcos\0\0\0\0";
-	s2 = "atomsmagicos\0abc";
-	size = 10;
-	printf("%d\n", (strncmp(s1, s2, size)));
-	printf("%d\n", (ft_strncmp(s1, s2, size)));
-}*/
