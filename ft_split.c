@@ -6,7 +6,7 @@
 /*   By: igngonza <igngonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 15:54:56 by igngonza          #+#    #+#             */
-/*   Updated: 2024/04/23 16:08:59 by igngonza         ###   ########.fr       */
+/*   Updated: 2024/04/23 16:24:39 by igngonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,16 +60,13 @@ static char	**ft_free_memory(char **ret)
 	return (NULL);
 }
 
-char	**ft_split(const char *s, char c)
+char	**ft_copy_into_array(const char *s, char **ret, char c)
 {
-	char	**ret;
-	size_t	i;
 	size_t	len;
+	size_t	i;
 
-	if (!s)
-		return (NULL);
+	len = 0;
 	i = 0;
-	ret = ft_memory_allocation(s, c);
 	while (*s && ret)
 	{
 		if (*s != c)
@@ -87,6 +84,17 @@ char	**ft_split(const char *s, char c)
 	}
 	if (ret != NULL)
 		ret[i] = NULL;
+	return (ret);
+}
+
+char	**ft_split(const char *s, char c)
+{
+	char	**ret;
+
+	if (!s)
+		return (NULL);
+	ret = ft_memory_allocation(s, c);
+	ret = ft_copy_into_array(s, ret, c);
 	return (ret);
 }
 /*int	main(void)
