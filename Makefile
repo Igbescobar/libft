@@ -43,6 +43,7 @@ SRCS_BONUS = ft_lstnew.c\
 						 ft_lstsize.c\
 						 ft_lstadd_back.c\
 						 ft_lstiter.c\
+						 ft_lstlast.c\
 
 OBJS    = $(SRCS:.c=.o)
 
